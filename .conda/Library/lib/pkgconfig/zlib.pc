@@ -1,0 +1,13 @@
+prefix=c:/Users/rashm/OneDrive/Documents/summer 2024/VA/streamlit/.conda/Library
+exec_prefix=c:/Users/rashm/OneDrive/Documents/summer 2024/VA/streamlit/.conda/Library
+libdir=c:/Users/rashm/OneDrive/Documents/summer 2024/VA/streamlit/.conda/Library/lib
+sharedlibdir=c:/Users/rashm/OneDrive/Documents/summer 2024/VA/streamlit/.conda/Library/lib
+includedir=c:/Users/rashm/OneDrive/Documents/summer 2024/VA/streamlit/.conda/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
