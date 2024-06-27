@@ -38,15 +38,15 @@ st.line_chart(sales_by_month, y="Sales")
 
 
 # (1) Dropdown for Category with placeholder
-options = df['Category'].unique()
+category_options = ["Select a category"] + df['Category'].unique().tolist()
 selected_category = st.selectbox(
     "Select a category from the below options",
-    options=options,
+    options=category_options,
     index=0
 )
 
-# Check if a category is selected
-if selected_category:
+# Check if a valid category is selected
+if selected_category and selected_category != "Select a category":
     # Filter data based on selected category
     filtered_df = df[df['Category'] == selected_category]
 
